@@ -1,7 +1,6 @@
 var image = 0;
 var slideImage = 1;
 var slide = document.getElementsByClassName("monSlide");
-moin(slideImage);
 carousel();
 
 function carousel() {
@@ -19,11 +18,10 @@ function plus(n) {
 }
 
 function moin(n) {
-    var x = document.getElementsByClassName("monSlide");
-    if (n > x.length) {slideImage = 1}
-    if (n < 1) {slideImage = x.length} ;
-    for (var i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
+    if (n > slide.length) {slideImage = 1}
+    if (n < 1) {slideImage = slide.length} ;
+    for (var i = 0; i < slide.length; i++) {
+        slide[i].style.display = "none";
     }
-    x[slideImage-1].style.display = "block";
+    slide[slideImage-1].style.display = "block";
 }
