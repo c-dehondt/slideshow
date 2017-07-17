@@ -21,15 +21,22 @@
     </head>
 
     <body>
-      <main>
-        <div class="">
-          <ul>
-            <li class="monSlide"><img src="img/image1.jpg" alt="image pour carousell"></li>
-            <li class="monSlide"><img src="img/image7.jpeg" alt="image pour carousell"></li>
-            <li class="monSlide"><img src="img/image3.jpg" alt="image pour carousell"></li>
-            <li class="monSlide"><img src="img/image4.jpg" alt="image pour carousell"></li>
-            <li class="monSlide"><img src="img/image5.jpeg" alt="image pour carousell"></li>
-          </ul>
+      <main class="container ">
+        <div class="row ">
+          <h1 class="col-12">Mon slide</h1>
+          <div class="col-12">
+            <ul>
+              <li class="monSlide"><img src="img/image1.jpg" alt="image pour carousell"></li>
+              <li class="monSlide"><img src="img/image7.jpeg" alt="image pour carousell"></li>
+              <li class="monSlide"><img src="img/image3.jpg" alt="image pour carousell"></li>
+              <li class="monSlide"><img src="img/image4.jpg" alt="image pour carousell"></li>
+              <li class="monSlide"><img src="img/image5.jpeg" alt="image pour carousell"></li>
+            </ul>
+            <div class="col-12">
+              <button class="btn btn-warning" onclick="plus(-1)">Preview</button>
+              <button class="btn btn-warning" onclick="plus(+1)">Next</button>
+            </div>
+          </div>
         </div>
       </main>
 
